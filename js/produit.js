@@ -1,4 +1,5 @@
-//récupération de l'ID de l'ourson de la page
+
+//récupération de l'ID de cam de la page
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
@@ -63,31 +64,31 @@ const getdata = async function() {
             addcam.textContent = "Ajouter au panier"
             addcam.addEventListener("click", function (event) {
                 event.preventDefault();
-                let camChoosen = {
-                    camname: camera.name,
-                    camid: camera._id,
+                let camerachoosen = {
+                    cameraName: camera.name,
+                    cameraId: camera._id,
                     cameralenses: select.value,
                     quantity: 1,
-                    camprice: camera.price / 100,
+                    cameraPrice: camera.price / 100,
                 };
-                console.log(camChoosen);
+                console.log(camerachoosen);
 
-                let storedcam = JSON.parse(localStorage.getItem('newArticle'));
+                let storedcameras = JSON.parse(localStorage.getItem('newArticle'));
                 const cameralenses = select.value;
-                if(storedcam) {
-                    storedcam.push(camChoosen);
-                    localStorage.setItem('newArticle', JSON.stringify(storedcam));
-                    console.log(storedcam);
+                if(storedcameras) {
+                    storedcameras.push(camerachoosen);
+                    localStorage.setItem('newArticle', JSON.stringify(storedcameras));
+                    console.log(storedcameras);
                     if (window.confirm(camera.name + " " + cameralenses + ' a bien été ajouté. Souhaitez vous consulter votre panier ?')) { 
                         window.location.href = "panier.html";
                     } else {
                         window.location.href = "index.html";
                     }
                 } else {
-                    storedcam = [];
-                    storedcam.push(camChoosen);
-                    localStorage.setItem('newArticle', JSON.stringify(storedcam));
-                    console.log(storedcam);
+                    storedcameras = [];
+                    storedcameras.push(camerachoosen);
+                    localStorage.setItem('newArticle', JSON.stringify(storedcameras));
+                    console.log(storedcameras);
                     if (window.confirm(camera.name + " " + cameralenses + ' a bien été ajouté. Souhaitez vous consulter votre panier ?')) { 
                         window.location.href = "panier.html";
                     } else {
@@ -104,5 +105,11 @@ const getdata = async function() {
     }
 };
 
+//appel de la fonction getTeddies
 getdata();
 
+/*else if (storedcameras && camerachoosen == storedcameras) {
+    const findTeddy = camera.find(x => x['_id'] === id);
+    console.log(findTeddy);
+
+}*/ 

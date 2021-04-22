@@ -50,11 +50,3 @@ const getdata =  async function() {
 getdata();
 
 
-
-
-
-
-
-
-
-
