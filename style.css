@@ -19,16 +19,13 @@
    } 
    form
    {
-       border: 1px solid greenyellow;
    }
    .back
    {
        margin-top: 23px;
-       border: 1px solid red;
    }
   .camera
   {
-      border: 1px solid red;
       border-radius: 17px;
       width:400px ;
       margin-left: 60px;
@@ -138,3 +135,31 @@ section
     padding-top: 10px;
     padding-bottom: 8px;
   }
+.camera_ref1{
+    width: 400px;
+    margin-left: 30px;
+    border: 1px solid black;
+    border-top-left-radius: 17px;
+
+    border-top-right-radius: 17px;
+
+}
+.each_camera
+{
+    display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  background-color: #f3e9f1;
+  border: 1px solid tomato;
+}
+.camera_price
+{
+ 
+    display: flex;
+  justify-content: space-between;   
+}
+.fas{
+    width: 10px;
+    height: 15px;
+    }

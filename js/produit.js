@@ -17,7 +17,7 @@ const getdata = async function() {
             camH2.textContent = " Camera Seléctionné : " + camera.name;
             const camDiv = document.createElement('div');
             camMain.appendChild(camDiv);
-            camDiv.className = 'camera_ref';
+            camDiv.className = 'camera_ref1';
             const camImg = document.createElement('img');
             camDiv.appendChild(camImg);
             camImg.setAttribute('src', camera.imageUrl);
@@ -36,6 +36,7 @@ const getdata = async function() {
             camDivInfo.appendChild(camPrice);
             camPrice.textContent = "Son prix : " + camera.price / 100 + " €";
             camPrice.className = 'camera_price';
+            
             const form = document.createElement('form');
             camDivInfo.appendChild(form);
             const formDiv = document.createElement('div');
