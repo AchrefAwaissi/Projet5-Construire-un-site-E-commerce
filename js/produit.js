@@ -108,11 +108,6 @@ const getdata = async function() {
     }
 };
 
-//appel de la fonction getTeddies
 getdata();
 
-/*else if (storedcameras && camerachoosen == storedcameras) {
-    const findTeddy = camera.find(x => x['_id'] === id);
-    console.log(findTeddy);
 
-}*/ 
