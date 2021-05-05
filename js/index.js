@@ -17,13 +17,15 @@ const getdata =  async function() {
                 productLink.href = "produit.html?id=" + camera._id;
                 cameraSection.appendChild(productLink);
                 productLink.className = 'section_zoom';
-                productLink.setAttribute('title', "L'camera " + camera.name + " vous attend !");
+                productLink.setAttribute('title', "camera " + camera.name + " vous attend !");
         
                 const camImg = document.createElement('img');
                 productLink.appendChild(camImg);
                 camImg.setAttribute('src', camera.imageUrl);
                 camImg.setAttribute('alt', 'cam ' + camera.name);
                 camImg.setAttribute('title', 'cam1 ' + camera.name);
+                camImg.className = 'img';
+
         
                 const camRef = document.createElement('div');
                 productLink.appendChild(camRef);

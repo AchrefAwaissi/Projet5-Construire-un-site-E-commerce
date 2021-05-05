@@ -10,9 +10,6 @@ const camDivCart = document.createElement('div');
 camDiv.appendChild(camDivCart);
 camDivCart.className = 'camera_cart';
 
-const camH3 = document.createElement('h3');
-camDivCart.appendChild(camH3);
-camH3.textContent = "Vos cameras :";
 
 if(storedcameras == null || storedcameras.length === 0){
     // si le panier est vide 
@@ -318,13 +315,14 @@ if(storedcameras == null || storedcameras.length === 0){
             });
             if(response.ok) {
                 let data = await response.json();
-                console.log(data.order_Id);
-                localStorage.setItem("response-Order", data.order_Id);
-                window.location = "confirmation.html";
+                console.log('data='+data);
+                localStorage.setItem("response-Order", data.orderId);
+              window.location = "confirmation.html";
                 localStorage.removeItem("newArticle");
 
             } else {
                 event.preventDefault();
+                console.log('erreur');
                 console.error('Retour du serveur : ', response.status);
                 alert('Erreur rencontrée : ' + response.status);
             } 
