@@ -1,6 +1,6 @@
 // récupération de l'id de la commande
-let orderId = localStorage.getItem('response-Order');
-console.log(orderId);
+let order_Id = localStorage.getItem('response-Order');
+console.log(order_Id);
 
 // récupération du prix total de la commande
 let totalPrice = localStorage.getItem('totalPrice');
@@ -36,7 +36,7 @@ camH3Bis.textContent = "Récapitulatif de votre commande : ";
 
 const cameraPar5 = document.createElement('p');
 cameraDivConfirm.appendChild(cameraPar5);
-cameraPar5.textContent = "Numéro de commande : " + orderId;
+cameraPar5.textContent = "Numéro de commande : " + order_Id;
 cameraPar5.className = "confirmation1";
 
 const cameraPar6 = document.createElement('p');

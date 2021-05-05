@@ -9,74 +9,73 @@
     font-weight: normal;
     font-style: normal;
   }
-   .img  {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    border-top-right-radius: 17px;
-    border-top-left-radius: 17px;
-} 
-body{
-    margin: 0;
-    padding: 0;
-}
-#product_page{
-    margin: 0;
-    padding: 0;
-}
-  #logo{
-      width: 150px;
-      height: 74px;
-  }
+   img
+   {
+       width: 400px;
+       height: 300px;
+       object-fit: cover;
+       border-top-right-radius: 17px;
+       border-top-left-radius: 17px;
+   } 
+   form
+   {
+   }
    .back
    {
        margin-top: 23px;
    }
-   .camera
-   {
-       border-radius: 17px;
-       width:400px ;
-       margin-left: 60px;
-       margin-bottom: 20px;
-   }
-   button
-   {
-       margin-top: 20px;
-     }
-     .panier{
-        font-family: 'belligerent_madnessregular';
-        margin-right: 20px;
-        margin-top: 20px;
-    
+  .camera
+  {
+      border-radius: 17px;
+      width:400px ;
+      margin-left: 60px;
+      margin-bottom: 20px;
+  }
+  button
+  {
+      margin-top: 20px;
     }
-    .bienvenue
-    {
-        font-family: 'belligerent_madnessregular';
-    
-        border: 2px solid red;
-        border-radius: 17px;
-        font-size: 20px;
-        padding: 12px;
-        text-align: center;
-        align-self: center;
-        width: 340px;
-    
-    }
-    p{
-        font-family: "belligerent";
-    }
-    body
-    {
-        
-        margin: 0;
-        padding: 0;
-    }
-    
+ 
+  
+  #logo
+  {
+      width: 140px;
+      height: 63px;
+  
+  }
+  .panier{
+      font-family: 'belligerent_madnessregular';
+      margin-right: 20px;
+      margin-top: 20px;;
+  
+  }
+  .bienvenue
+  {
+      font-family: 'belligerent_madnessregular';
+  
+      border: 2px solid #f2f2f2;
+      border-radius: 17px;
+      font-size: 20px;
+      padding: 12px;
+      text-align: center;
+      align-self: center;
+      width: 340px;
+  
+  }
+  p{
+      font-family: "belligerent";
+  }
+  body
+  {
+      
+      margin: 0;
+      padding: 0;
+  }
   header{
-    background-color: #F3E9F1;
-
-}
-.Premierp
+      background-color: #F3E9F1;
+  
+  }
+  .Premierp
   {
       display: flex;
       flex-direction: row;
@@ -97,15 +96,24 @@ body{
   
   }
   a{
-    text-decoration: none;
-    color: black;
-}
-.p1
+      text-decoration: none;
+      color: black;
+  }
+  .p1
+  {
+      font-family: 'belligerent_madnessregular';
+  
+  }
+section
 {
-    font-family: 'belligerent_madnessregular';
-
+    border: 2px solid #f2f2f2;
+    width: 400px;
+    margin-top: 25px;
+    margin-left: 100px;
+    border-radius:17px ;
 }
-footer {
+
+  footer {
     margin: auto;
     height: auto;
     background-color: #f3e9f1;
@@ -127,15 +135,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 8px;
   }
-  section
-  {
-      border: 2px solid #f2f2f2;
-      width: 400px;
-      margin-top: 25px;
-      margin-left: 100px;
-      border-radius:17px ;
-  }
-  .camera_ref1{
+.camera_ref1{
     width: 400px;
     margin-left: 30px;
     border: 1px solid black;
@@ -146,13 +146,12 @@ footer {
 }
 .each_camera
 {
- display: flex;
+    display: flex;
   justify-content: space-between;
+  width: 80%;
+  margin: auto;
   background-color: #f3e9f1;
-  border: 1px solid red;
-  width: 600px;
-  margin-left: 30%;
-
+  border: 1px solid tomato;
 }
 .camera_price
 {
@@ -163,6 +162,7 @@ footer {
 .fas{
     width: 10px;
     height: 15px;
+<<<<<<< HEAD
     }
    .total
    {
@@ -338,3 +338,6 @@ h3{
         margin-left: 5px;
     }
 }
+=======
+    }
+>>>>>>> parent of bdde23b (push final)
