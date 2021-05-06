@@ -9,7 +9,7 @@
     font-weight: normal;
     font-style: normal;
   }
-   img
+   .img
    {
        width: 400px;
        height: 300px;
@@ -17,9 +17,6 @@
        border-top-right-radius: 17px;
        border-top-left-radius: 17px;
    } 
-   form
-   {
-   }
    .back
    {
        margin-top: 23px;
@@ -37,8 +34,7 @@
     }
  
   
-  #logo
-  {
+    #logo  {
       width: 140px;
       height: 63px;
   
@@ -162,7 +158,6 @@ section
 .fas{
     width: 10px;
     height: 15px;
-<<<<<<< HEAD
     }
    .total
    {
@@ -338,6 +333,4 @@ h3{
         margin-left: 5px;
     }
 }
-=======
-    }
->>>>>>> parent of bdde23b (push final)
+

@@ -23,6 +23,7 @@ const getdata = async function() {
             camImg.setAttribute('src', camera.imageUrl);
             camImg.setAttribute('alt', 'cam ' + camera.name);
             camImg.setAttribute('title', 'cam1 ' + camera.name);
+            camImg.className= 'img';
             const camDivInfo = document.createElement('div');
             camDiv.appendChild(camDivInfo);
             camDivInfo.className = 'cam_info';
@@ -65,6 +66,7 @@ const getdata = async function() {
             addcam.textContent = "Ajouter au panier"
             addcam.addEventListener("click", function (event) {
                 event.preventDefault();
+                //nous avons creer lobjet javascript qui contient les données
                 let camerachoosen = {
                     cameraName: camera.name,
                     cameraId: camera._id,
@@ -73,10 +75,13 @@ const getdata = async function() {
                     cameraPrice: camera.price / 100,
                 };
                 console.log(camerachoosen);
-
+// declaration de cette variable dans laquelle on met les key et les values qui sont dans le storage
+//convertir de json vers objet javascript
                 let storedcameras = JSON.parse(localStorage.getItem('newArticle'));
                 const cameralenses = select.value;
                 if(storedcameras) {
+                    //avant la condition etais false la il est true il va faloire mettre push pour rajouter les new article 
+                    //maintenat si on click on a un nouvea qui aparait
                     storedcameras.push(camerachoosen);
                     localStorage.setItem('newArticle', JSON.stringify(storedcameras));
                     console.log(storedcameras);
@@ -86,6 +91,10 @@ const getdata = async function() {
                         window.location.href = "index.html";
                     }
                 } else {
+                    //nous avons crrer le tablaeu stored camera et avec push il va contenir les produitchoisis ,si le client clickk sur ajouter els element
+                    //se disparaise puisque on a pas encore enregistrer dans le localstorage
+                    //grace au setItem on va envoyer les données au local storage 
+                    //on va envoyer un objet javascript dans le local storage il faut le convertir en json 
                     storedcameras = [];
                     storedcameras.push(camerachoosen);
                     localStorage.setItem('newArticle', JSON.stringify(storedcameras));
