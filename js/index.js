@@ -24,7 +24,8 @@ const getdata =  async function() {
                 camImg.setAttribute('src', camera.imageUrl);
                 camImg.setAttribute('alt', 'cam ' + camera.name);
                 camImg.setAttribute('title', 'cam1 ' + camera.name);
-        
+                camImg.className= 'img';
+
                 const camRef = document.createElement('div');
                 productLink.appendChild(camRef);
                 camRef.className = 'camera_ref';
