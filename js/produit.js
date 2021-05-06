@@ -79,7 +79,7 @@ const getdata = async function() {
                 let storedcameras = JSON.parse(localStorage.getItem('newArticle'));
                 const cameralenses = select.value;
                 if(storedcameras) {
-                    
+                   
                     storedcameras.push(camerachoosen);
                     localStorage.setItem('newArticle', JSON.stringify(storedcameras));
                     console.log(storedcameras);
@@ -89,7 +89,6 @@ const getdata = async function() {
                         window.location.href = "index.html";
                     }
                 } else {
-                   
                     storedcameras = [];
                     storedcameras.push(camerachoosen);
                     localStorage.setItem('newArticle', JSON.stringify(storedcameras));

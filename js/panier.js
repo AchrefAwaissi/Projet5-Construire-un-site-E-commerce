@@ -129,7 +129,7 @@ if(storedcameras == null || storedcameras.length === 0){
 
     // création fonctions de validité mail
     function validMail(value){
-        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value)
+        return /^[A-Z-a-z-0-9.-_]{10,50}+[@]{1}[A-Z-a-z-0-9.-_]+[.]{1}[a-z]{}2,10)$/.test(value)
     };
  // ajout formulaire "prénom"
  const divFirstName = document.createElement('div');
