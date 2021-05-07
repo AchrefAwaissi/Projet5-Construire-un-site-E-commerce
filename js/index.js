@@ -1,4 +1,4 @@
-const getdata =  async function() {
+const getdata = async function() {
     //récupération des données de l'API 
     try {
         let response = await fetch('http://localhost:3000/api/cameras/');
@@ -49,5 +49,3 @@ const getdata =  async function() {
 }
 
 getdata();
-
-
