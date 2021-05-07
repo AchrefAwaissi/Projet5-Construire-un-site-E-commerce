@@ -144,7 +144,7 @@ section
 {
     display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 50%;
   margin: auto;
   background-color: #f3e9f1;
   border: 1px solid tomato;
@@ -334,3 +334,22 @@ h3{
     }
 }
 
+@media only screen and (min-width: 1280px)  {
+    body{
+        margin: 0;
+        padding: 0;
+        max-width: 1280px;
+        align-self: center;
+    }
+    footer{
+        margin: 0px;
+        max-width: 1280px;
+    }
+ 
+    #product_page{
+        margin: 0;
+        padding: 0;
+        max-width: 1280px;
+
+    }  
+}

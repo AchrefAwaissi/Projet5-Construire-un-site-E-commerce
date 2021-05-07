@@ -129,7 +129,7 @@ if(storedcameras == null || storedcameras.length === 0){
 
     // création fonctions de validité mail
     function validMail(value){
-        return /^[A-Z-a-z-0-9.-_]{10,50}+[@]{1}[A-Z-a-z-0-9.-_]+[.]{1}[a-z]{}2,10)$/.test(value)
+        return /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(value)
     };
  // ajout formulaire "prénom"
  const divFirstName = document.createElement('div');
@@ -318,8 +318,8 @@ if(storedcameras == null || storedcameras.length === 0){
             });
             if(response.ok) {
                 let data = await response.json();
-                console.log(data.order_Id);
-                localStorage.setItem("response-Order", data.order_Id);
+                console.log(data.orderId);
+                localStorage.setItem("response-Order", data.orderId);
                 window.location = "confirmation.html";
                 localStorage.removeItem("newArticle");
 
