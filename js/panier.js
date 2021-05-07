@@ -10,10 +10,6 @@ const camDivCart = document.createElement('div');
 camDiv.appendChild(camDivCart);
 camDivCart.className = 'camera_cart';
 
-const camH3 = document.createElement('h3');
-camDivCart.appendChild(camH3);
-camH3.textContent = "Vos cameras :";
-
 if(storedcameras == null || storedcameras.length === 0){
     // si le panier est vide 
     const emptyCart = document.createElement('p');
@@ -320,7 +316,7 @@ if(storedcameras == null || storedcameras.length === 0){
                 let data = await response.json();
                 console.log(data.orderId);
                 localStorage.setItem("response-Order", data.orderId);
-                window.location = "confirmation.html";
+                window.location = "onfirmation.html";
                 localStorage.removeItem("newArticle");
 
             } else {
