@@ -305,7 +305,7 @@ if(storedcameras == null || storedcameras.length === 0){
     // envoie des données au serveur
     const post = async function (data){
         try {
-            let response = await fetch('http://localhost:3000/api/cameras/order', {
+            let response = await fetch('https://localhost:3000/api/cameras/order', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
