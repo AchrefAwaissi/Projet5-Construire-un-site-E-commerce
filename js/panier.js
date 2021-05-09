@@ -316,7 +316,7 @@ if(storedcameras == null || storedcameras.length === 0){
                 let data = await response.json();
                 console.log(data.orderId);
                 localStorage.setItem("response-Order", data.orderId);
-                window.location = "onfirmation.html";
+                window.location = "Confirmation.html";
                 localStorage.removeItem("newArticle");
 
             } else {
