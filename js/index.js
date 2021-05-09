@@ -17,7 +17,7 @@ const getdata = async function() {
                 productLink.href = "produit.html?id=" + camera._id;
                 cameraSection.appendChild(productLink);
                 productLink.className = 'section_zoom';
-                productLink.setAttribute('title', "L'camera " + camera.name + " vous attend !");
+                productLink.setAttribute('title', "La camera " + camera.name + " vous attend !");
         
                 const camImg = document.createElement('img');
                 productLink.appendChild(camImg);
